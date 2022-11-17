@@ -50,3 +50,100 @@ section02TL
 .from(".section02 .mainTxt03", { x: 100, opacity: 0})
 .from(".section02 .circleList li", { x: 100, opacity: 0,stagger:{each:0.5}})
 .from(".section02 .cduBox", { scale: 2, opacity:0})
+
+const section03TL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section03",
+    markers: {
+      fontSize: "20px",
+      indent: 20,
+      startColor: "#fff",
+      endColor: "#f00",
+    },
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+    pin: true,
+  },
+});
+
+/* prettier-ignore*/
+section03TL
+.from(".section03 .title", { backgroundColor:"transparent" })
+.from(".section03 .title .char", { x: 100, opacity: 0, stagger: { each: 0.05 } })
+.from(".section03 .mainTxt .char", { x: 100, opacity: 0, stagger: { each: 0.05 } })
+.from(".section03 .list li", { x: 100, opacity: 0,stagger:{each:0.5}})
+.from(".section03 .airplane", { x: -100,y:100, opacity: 0})
+
+const section04TL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section04",
+    markers: {
+      fontSize: "20px",
+      indent: 20,
+      startColor: "#fff",
+      endColor: "#f00",
+    },
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+    pin: true,
+  },
+});
+
+/* prettier-ignore*/
+section04TL
+.from(".section04 .title", { backgroundColor:"transparent" })
+.from(".section04 .title .char", { x: 100, opacity: 0, stagger: { each: 0.05 } })
+.from(".section04 .mainTxt .char", { x: 100, opacity: 0, stagger: { each: 0.05 } })
+.from(".section04 .list li", { scale: 0, opacity: 0,stagger:{each:0.5}})
+
+const section05TL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section05",
+    markers: {
+      fontSize: "20px",
+      indent: 20,
+      startColor: "#fff",
+      endColor: "#f00",
+    },
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+    pin: true,
+  },
+});
+
+/* prettier-ignore*/
+section05TL
+.from(".section05 .title", { backgroundColor:"transparent" })
+.from(".section05 .title .char", { x: 100, opacity: 0, stagger: { each: 0.05 } })
+.from(".section05 .mainTxt01", { x: 100, opacity: 0 })
+.from(".section05 .mainTxt02", { x: -100, opacity: 0 })
+.from(".section05 .mainTxt03", { x: 100, opacity: 0 })
+.from(".section05 .list li", { scale: 0, opacity: 0,stagger:{each:0.5}})
+
+const section06TL = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section06",
+    markers: {
+      fontSize: "20px",
+      indent: 20,
+      startColor: "#fff",
+      endColor: "#f00",
+    },
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+    pin: true,
+  },
+});
+
+/* prettier-ignore*/
+section06TL
+.from(".section06 .mainTxt .char", { x: 100, opacity: 0,stagger:{each:0.05} })
+.from(".section06 .subTxt .char", { x: 100, opacity: 0,stagger:{each:0.05} })
+.from(".section06 .txtDash .char", { x: 100, opacity: 0,stagger:{each:0.05} })
+.from(".section06 .img", { scale: 2, opacity: 0 })
+.from(".section06 .shortcut .char", { x: 100, opacity: 0, stagger:{each:0.05} })
+.from(".section06 .btns a", { scale: 0, opacity: 0,stagger:{each:0.5}})
